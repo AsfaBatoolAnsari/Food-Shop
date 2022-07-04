@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body>
+    <!------------------------HEADER----------------------------->
+
+    <header>
+        <img src="images/logo.png">
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li id="services"><a href="#service">Services <i class="fa-solid fa-angle-down"></i></a></li>
+            <li><a href="#menu">Menu <i class="fa-solid fa-angle-down"></i></a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+        <button class="btn"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</button>
+    </header>
+
+    <!----------------------------------HOME------------------------------->
+
+
+    <section class="home" id="home">
+        <button class="btn">More than faster<img src="images/cherry.png"></button>
+        <div class="text">
+            <h2>Be The Fastest<br>In Delivery<br>Your <span>Food</span></h2>
+            <img src="images/girl.png" alt="img">
+
+        </div>
+
+        <p>Our job to filling your tummy with delicious food</p>
+        <p>and with fast and free delivery.</p>
+
+        <div class="btn-2">
+            <button class="btn">Get Started</button>
+            <p><i class="fa-solid fa-play"></i> Watch Now</p>
+        </div>
+
+        <!----------------FOLLOWERS----------------->
+
+        <div class="follower">
+            <img class="img-1" src="images/girl-1.jfif" alt="">
+            <img class="img-2" src="images/girl-2.jpg" alt="">
+            <img class="img-3" src="images/boy.jfif" alt="">
+            <h3>Our Happy Customer</h3>
+            <p><i class="fa-solid fa-star"></i> 4.8 <span>(12.5k Review)</span></p>
+        </div>
+    </section>
+
+    <!--------------------------------SERVICE---------------------------------->
+
+    <section class="service" id="service">
+        <p>What we serve</p>
+        <h2>Your Favourite Food <br>Delivery Partner</h2>
+
+        <div class="service-img">
+            <img src="images/order.png" alt="order">
+            <h3>Easy To Order</h3>
+
+            <img src="images/delivery.png" style="height:27rem ;" alt="delivery">
+            <h3>Fastest Delivery</h3>
+
+            <img src="images/quality.png" alt="quality">
+            <h3 style="margin-left:-17rem ;">Best Quality</h3>
+
+        </div>
+    </section>
+
+    <!------------------------MENU---------------------------->
+
+
+
+    <!-----------------------------REVIEW-------------------------->
+
+    <section class="reviews">
+        <div class="small-container">
+            <img src="images/review.png" alt="img">
+            <div class="heading">
+                <h2>What They Say</h2>
+                <h1>What Our Customer <br>SayAboutUs</h1>
+                <p>"Food Shop is the best. Besides the many and delicious <br> meals, the service is also very good,
+                    especially in <br> the very fast delivery. I highly recommend Food Shop to you."</p>
+            </div>
+            <div class="customer">
+                <img src="images/girl-1.jfif" alt="">
+                <h2>Lisa Jordan</h2>
+                <span>Food Enthusiast</span>
+                <i class="fa-solid fa-star" style="margin-left: -13.4rem;"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <h3>4.8</h3>
+            </div>
+        </div>
+        <div class="followers">
+            <h3>Best Reviews</h3>
+            <img class="img-1" src="images/girl-1.jfif" alt="">
+            <img class="img-2" src="images/girl-2.jpg" alt="">
+            <img class="img-3" src="images/boy.jfif" alt="">
+            <img class="img-4" src="images/circle.png" alt="">
+            <p>12k+</p>
+        </div>
+    </section>
+
+    <!-------------------------DOWNLOAD----------------->
+
+    <section class="download">
+        <h2>Download Now!!</h2>
+        <div class="download-container">
+            <p>Download the app and easily order the food you like...</p>
+            <img src="images/mob-app.png" alt="">
+        </div>
+        <div class="app-container">
+            <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. <br> Lorem Ipsum has been
+                the industry's <br> standard dummy text ever since the 1500s, when an unknown printer took a galley
+                <br> of type and scrambled it to make a type specimen book.....<span>Read More</span>
+            </p>
+        </div>
+    </section>
+    <!---------------------------CONTACT----------------------->
+
+    <section id="contact">
+
+        <h1 class="section-header">Contact Us</h1>
+
+        <div class="contact-wrapper">
+
+            <!-- Left contact page -->
+
+            <form>
+                <p><input class="from-text" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="from-text" type="text" placeholder="Email" required name="Email"></p>
+                <p><input type="text" name="number" placeholder="enter your number" class="from-text" required>
+                </p>
+                <textarea name="message" class="from-text" required placeholder="enter your message" cols="30"
+                    rows="10"></textarea>
+
+
+                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                    <div class="alt-send-button">
+                        <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                    </div>
+
+                </button>
+
+            </form>
+
+            <!-- Left contact page -->
+
+            <div class="direct-contact-container">
+
+                <ul class="contact-list">
+                    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">City,
+                                State</span></i></li>
+
+                    <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
+                                    href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
+
+                    <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
+                                    href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></i></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <hr>
+        <div class="find">
+            <h2>FIND US</h2>
+        </div>
+        <ul class="social-media-list">
+            <li><a href="#" target="_blank" class="contact-icon">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+                    <i class="fa-brands fa-codepen" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+                    <i class="fa-brands fa-figma" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+                    <i class="fa-brands fa-dribbble" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+        <hr>
+
+        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+
+
+
+
+
+    </section>
+
+
+
+</body>
+
+</html>
