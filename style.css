@@ -48,27 +48,58 @@ img {
     width: 10%;
 }
 
-.navbar {
-    list-style-type: none;
-    display: flex;
+/*-------NAV_BAR-------*/
+
+nav {
+  margin:0 auto;
+  display:inline-block;
+  font-size: 1.9rem;
+  padding-left: 2rem;
 }
 
-.navbar a {
-    padding: 0 2.5rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--clr3);
+nav ul {
+  margin:0;padding:0;
+  list-style-type:none;
+  float:left;
+  display:inline-block;
 }
 
-.navbar a:hover {
-    color: var(--clr1);
-    cursor: pointer;
+nav ul li {
+  position:relative;
+  margin:0 20px 0 0;
+  float:left;
+  display:inline-block;
 }
 
-.fa-angle-down {
-    font-size: 1.2rem;
-    padding-left: 0.5rem;
-    color: var(--clr1);
+li > a:after { content: ' »'; } /* Change this in order to change the Dropdown symbol */
+
+li > a:only-child:after { content: ''; }
+
+nav ul li a {
+  padding: 2rem;
+  display:inline-block;
+  color:var(--clr1);
+  text-decoration:none;
+}
+
+nav ul li a:hover {
+  opacity:0.5;
+}
+
+nav ul li ul {
+  display:none;
+  position:absolute;
+  left:0;
+  background:rgb(250, 231, 235);
+  float:left;
+}
+
+nav ul li ul li {
+  width:100%;
+}
+
+nav ul li:hover ul {
+  display:block;
 }
 
 .icons {
@@ -83,7 +114,7 @@ img {
     cursor: pointer;
 }
 
-.btn {
+.login a {
     padding: 10px 14px;
     border-radius: 4.3rem;
     font-size: 14px;
@@ -93,7 +124,7 @@ img {
     border: none;
 }
 
-.btn:hover {
+.login a:hover {
     color: #fff;
     background: rgb(212, 105, 123);
     cursor: pointer;
@@ -104,6 +135,17 @@ img {
 section {
     padding: 13rem 10px;
     padding-bottom: 0;
+}
+.home .faster
+{
+  margin-left: 13rem;
+  margin-top: 5rem;
+  border: none;
+  background:rgb(241, 221, 224) ;
+  color: var(--clr1);
+  padding: 1.2rem;
+  border-radius: 6rem;
+  margin-bottom: 2rem;
 }
 
 .home .text {
@@ -159,14 +201,17 @@ section {
 }
 
 .btn-2 .btn {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     margin-top: 0rem;
     cursor: pointer;
+    border: none;
+    border-radius: 5rem;
+    padding: 1.3rem;
 }
 
 .btn-2 p {
     padding-top: 3rem;
-    margin-left: -20rem;
+    margin-left: -8rem;
     color: #000000ab;
     cursor: pointer;
 }
@@ -413,6 +458,7 @@ section {
     margin-top: -5rem;
     width: 27rem;
     height: 40rem;
+    border-radius: 2rem;
 }
 
 .app-container p {
@@ -427,9 +473,6 @@ section {
     font-size: 1.7rem;
     cursor: pointer;
 }
-
-/*---------------------------MENU------------------*/
-
 
 
 /*---------------------CONTACT---------------------*/
@@ -477,12 +520,18 @@ section {
     overflow: hidden;
     transition: all .2s ease-in-out;
     margin-bottom: 2rem;
+    border: none;
+    border-radius: 2rem;
+    background: rgb(241, 221, 224);
   }
   
   .alt-send-button {
     width: 400px;
     height: 34px;
     transition: all .2s ease-in-out;
+    margin-top: 1rem;
+    cursor: pointer;
+    color: var(--clr1);
   }
   
   .send-text {
@@ -623,17 +672,562 @@ section {
     border-color: rgba(255,255,255,.6);
   }
   
-  
 
 
+  /*---------------------------MENU------------------*/
 
 
+/*------------------PIZZA----------------*/
 
+.carousel h2
+{
+  color: var(--clr1);
+  font-size: 3rem;
+  letter-spacing: .3rem;
+  text-align: left;
+  padding-top: 20rem;
+  padding-bottom: 1rem;
+  padding-left: 21.7rem;
+  font-weight: 100;
+}
+.float-right .para
+{
+  text-align: center;
+  font-size: 4rem;
+  padding-bottom: 2rem;
+  margin-left: 8rem;
+  font-weight: 800;
+}
+.float-right
+{
+  display: flex;
+  justify-content: space-between;
+}
+.flt
+{
+  float:right;
+}
+.carousel{
+  width:100%;
+  margin:auto;
+}
+.row{
+  width:100%;
+  padding:1rem;
+  overflow:hidden;
+  margin:auto;
+}
+.row-container{
+  width:2000px;
+  transition:0.5s;
+}
+.pizza h2
+{
+  color: var(--clr1);
+  font-size: 2.5rem;
+  letter-spacing: .3rem;
+  margin-left: 40rem;
+  font-weight: 800;
+  margin-top: -20rem;
+}
+.container img{
+  width: 25rem;
+  height: 25rem;
+  padding: 1.3rem;
+  float:left;
+  display:inline;
+  margin:0 5px;
+  background: none;
+  padding-top: 2rem;
+  border-radius: 3rem;
+}
+.clear{
+  clear:both;
+}
+.controls{
+  width:100%;
+  margin:auto;
+}
+.carousel  .flt-left,
+.flt-right 
+{
+  border:none;
+  padding:1.6rem;
+  color:white;
+  background:var(--clr1);
+  font-weight:bold;
+  outline:none;
+  height: 4rem;
+  text-align: center;
+  padding-top: 1.5rem;
+  border-radius:2rem;
+  position:relative;
+  margin-top: 7rem;
+  cursor: pointer;
+}
+/*------------PRICE------------*/
+.carousel .price-1,
+.price-2,
+.price-3,
+.price-4,
+.price-5,
+.price-6,
+.price-7,
+.price-8
+{
+  position: absolute;
+}
+/*-------PRICE_1---------*/
+.price-1 h2
+{
+  color: var(--clr3);
+  text-align: left;
+  margin-left: -19rem;
+  font-size: 1.8rem;
+  margin-top: -5rem;
+  padding-bottom: 0;
+  letter-spacing: normal;
+}
+.price-1 p
+{
+  font-size: 1.6rem;
+  margin-left: 3rem;
+  font-weight: 700;
+}
+.price-1 span
+{
+  color: rgba(255, 22, 6, 0.849);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.price-1 h4
+{
+  color: rgb(24, 24, 24);
+  margin-left: 3rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+/*--------------PRICE_2-----------*/
 
+.price-2 h2
+{
+  color: var(--clr3);
+  text-align: left;
+  margin-left: 7rem;
+  font-size: 1.8rem;
+  margin-top: -5rem;
+  padding-bottom: 0;
+  letter-spacing: normal;
+}
+.price-2 p
+{
+  font-size: 1.6rem;
+  margin-left: 29rem;
+  font-weight: 700;
+}
+.price-2 span
+{
+  color: rgba(255, 22, 6, 0.849);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.price-2 h4
+{
+  color: black;
+  margin-left: 29rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
 
+/*--------------PRICE_3-----------*/
 
+.price-3 h2
+{
+  color: var(--clr2);
+  text-align: left;
+  margin-left: 33rem;
+  font-size: 1.8rem;
+  margin-top: -5rem;
+  padding-bottom: 0;
+  letter-spacing: normal;
+}
+.price-3 p
+{
+  font-size: 1.6rem;
+  margin-left: 30pc;
+  font-weight: 700;
+  text-align: center;
+}
+.price-3 span
+{
+  color: rgba(255, 22, 6, 0.849);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.price-3 h4
+{
+  color: rgb(177, 174, 174);
+  margin-left: 31.5pc;
+  margin-top: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
 
+/*--------------PRICE_4-----------*/
 
+.price-4 h2
+{
+  color: var(--clr3);
+  margin-left: 59rem;
+  font-size: 1.8rem;
+  margin-top: -5rem;
+  padding-bottom: 0;
+  letter-spacing: normal;
+  text-align: center;
+}
+.price-4 p
+{
+  font-size: 1.6rem;
+  margin-left: 49.6pc;
+  text-align: center;
+  font-weight: 700;
+}
+.price-4 span
+{
+  color: rgba(255, 22, 6, 0.849);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.price-4 h4
+{
+  color: black;
+  margin-left: 78rem;
+  margin-top: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+/*--------------PRICE_5-----------*/
+
+.price-5 h2
+{
+  color: var(--clr3);
+  text-align: right;
+  margin-left: 55.5pc;
+  font-size: 1.8rem;
+  margin-top: -5rem;
+  padding-bottom: 0;
+  letter-spacing: normal;
+}
+.price-5 p
+{
+  font-size: 1.6rem;
+  margin-left: 63.5pc;
+  text-align: center;
+  font-weight: 700;
+}
+.price-5 span
+{
+  color: rgba(255, 22, 6, 0.849);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.price-5 h4
+{
+  color: black;
+  margin-left: 70pc;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/*--------------PRICE_6-----------*/
+
+.price-6 h2
+{
+  color: var(--clr2);
+  text-align: right;
+  margin-left: 72.3pc;
+  font-size: 1.8rem;
+  margin-top: -5rem;
+  padding-bottom: 0;
+  letter-spacing: normal;
+}
+.price-6 p
+{
+  font-size: 1.6rem;
+  text-align: center;
+  margin-left: 79.4pc;
+  font-weight: 700;
+}
+.price-6 span
+{
+  color: rgba(255, 22, 6, 0.849);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.price-6 h4
+{
+  color:white;
+  margin-left: 82pc;
+  text-align: center;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/*--------------PRICE_7-----------*/
+
+.price-7 h2
+{
+  color: var(--clr3);
+  text-align: left;
+  margin-left: 89pc;
+  font-size: 1.8rem;
+  margin-top: -5rem;
+  padding-bottom: 0;
+  letter-spacing: normal;
+}
+.price-7 p
+{
+  font-size: 1.6rem;
+  margin-left: 97.7pc;
+  text-align: center;
+  font-weight: 700;
+}
+.price-7 span
+{
+  color: rgba(255, 22, 6, 0.849);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.price-7 h4
+{
+  color: black;
+  margin-left: 158rem;
+  margin-top: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+/*--------------PRICE_8-----------*/
+
+.price-8 h2
+{
+  color: var(--clr2);
+  text-align: left;
+  margin-left: 106pc;
+  font-size: 1.8rem;
+  margin-top: -5rem;
+  padding-bottom: 0;
+  letter-spacing: normal;
+}
+.price-8 p
+{
+  font-size: 1.6rem;
+  margin-left: 120.1pc;
+  text-align: center;
+  font-weight: 700;
+}
+.price-8 span
+{
+  color: rgba(255, 106, 6, 0.849);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.price-8 h4
+{
+  color: white;
+  text-align: center;
+  margin-left: 120.5pc;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/*----------------BURGER-------------*/
+
+.burger h1
+{
+  color: var(--clr1);
+  font-size: 2.7rem;
+  font-weight: 800;
+  margin-top: 33rem;
+  text-align: center;
+  letter-spacing: .3rem;
+  padding-bottom: 1rem;
+}
+.burger .para
+{
+  text-align: center;
+  font-size: 3.3rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  padding-bottom: 2rem;
+}
+.burger-container
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.burger-img img
+{
+  width: 24rem;
+  height: 23rem;
+  margin: 4rem;
+  padding-top: 4rem;
+  margin-top: 2rem;
+  opacity: 3;
+}
+.burger-img img:hover
+{
+  opacity: .3;
+  cursor: pointer;
+}
+.names
+{
+  position: absolute;
+  margin-top: -11rem;
+  margin-left: 5rem;
+  color: var(--clr2);
+  font-weight: normal;
+}
+.names h3
+{
+  font-size: 1.5rem;
+}
+.names p
+{
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: .4rem;
+}
+.names span
+{
+  color: rgb(212, 42, 42);
+  font-size: 9px;
+}
+.names h4
+{
+  font-size: 1.3rem;
+}
+
+/*----------------SWEETS---------------*/
+
+.sweets h2
+{
+  color: var(--clr1);
+  font-size: 2.7rem;
+  font-weight: 800;
+  margin-top: 8rem;
+  text-align: center;
+  letter-spacing: .3rem;
+  padding-bottom: 1rem;
+}
+.sweets p
+{
+  text-align: center;
+  font-size: 3.3rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  padding-bottom: 2rem;
+}
+.sweet-container
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.sweet-img img
+{
+  width: 36rem;
+  height: 43rem;
+  margin-left: 20rem;
+  padding-top: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  opacity: 3;
+}
+.sweet-img img:hover
+{
+  opacity: .3;
+  cursor: pointer;
+}
+.sweet-img h3
+{
+  position: absolute;
+  margin-top: -9rem;
+  margin-left: 22rem;
+  color: wheat;
+  font-weight: 800;
+  font-size: 2.4rem;
+}
+.sweet-img h4
+{
+  font-size: 1.3rem;
+  margin-left: 22.3rem;
+  margin-top: -5rem;
+}
+
+/*------------DRINKS----------*/
+
+.drinks h2
+{
+  color: var(--clr1);
+  font-size: 2.7rem;
+  font-weight: 800;
+  margin-top: 8rem;
+  text-align: center;
+  letter-spacing: .3rem;
+  padding-bottom: 1rem;
+}
+.drinks p
+{
+  text-align: center;
+  font-size: 3.3rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  padding-bottom: 2rem;
+}
+.drink-container
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 15rem;
+}
+.drink-img img 
+{
+  width: 36rem;
+  height: 49rem;
+  margin-left: 20rem;
+  padding-top: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  opacity: 3;
+}
+.drink-img img:hover
+{
+  opacity: .3;
+  cursor: pointer;
+}
+.drink-img h3
+{
+  position: absolute;
+  margin-top: -9rem;
+  margin-left: 22rem;
+  color: white;
+  font-weight: 800;
+  font-size: 2.4rem;
+}
+.drink-img h4
+{
+  font-size: 1.3rem;
+  margin-left: 22.3rem;
+  margin-top: -5rem;
+  color: #fff;
+}
 
 
 

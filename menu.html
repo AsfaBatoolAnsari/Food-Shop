@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <!-----------------------HEADER--------------------->
+
+  <header>
+    <img src="images/logo.png">
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li id="services"><a href="#service">Services</a>
+          <ul>
+            <li><a href="#delivery">Delivery</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#quality">Quality</a></li>
+          </ul>
+        </li>
+        <li><a href="#menu">Menu</a>
+          <ul>
+            <li><a href="#pizza">Pizza</a></li>
+            <li><a href="#burger">Burger</a></li>
+            <li><a href="#sweets">Sweets</a></li>
+            <li><a href="#drink">Drinks</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="icons">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-bag-shopping"></i>
+    </div>
+    <div class="login">
+      <a href="#login"><i class="fa-solid fa-arrow-right-to-bracket"></i>Login</a>
+    </div>
+  </header>
+
+  <!------------------------MENU---------------------------->
+
+  <!----------------------PIZZA---------------->
+  <div class="carousel">
+    <h2>OUR MENU</h2>
+    <div class="float-right">
+      <p class="para">Menu That Always <br> Make You Fall In Love.</p>
+      <a href="#btn" class='flt-left' style="margin-left: 58rem;" onclick="slideRight(this);"><i
+          class="fa fa-angle-left" aria-hidden="true"></i></a>
+      <a href="#btn" class='flt-right' style="margin-right: 8rem;" onclick="slideLeft(this);"><i
+          class="fa fa-angle-right" aria-hidden="true"></i></a>
+    </div>
+    <div class="pizza">
+      <h2>PIZZA</h2>
+    </div>
+    <div class="clear" id="pizza"></div>
+    <div class="row flt">
+
+      <div class="row-container">
+        <div class="container">
+          <img src="images/pizza-1.jpg" />
+          <div class="price-1">
+            <h2>Italian Pizza</h2>
+            <p><span>$</span>7.49</p>
+            <h4>Order Now <i class="fa-solid fa-chevron-right"></i></h4>
+          </div>
+        </div>
+        <div class="container">
+          <img src="images/pizza-2.jpg" />
+          <div class="price-2">
+            <h2>Veggie Pizza</h2>
+            <p><span>$</span>9.59</p>
+            <h4>Order Now <i class="fa-solid fa-chevron-right"></i></h4>
+          </div>
+        </div>
+        <div class="container">
+          <img src="images/pizza-3.jfif" />
+          <div class="price-3">
+            <h2>Pepperoni Pizza</h2>
+            <p><span>$</span>3.49</p>
+            <h4>Order Now <i class="fa-solid fa-chevron-right"></i></h4>
+          </div>
+        </div>
+        <div class="container">
+          <img src="images/pizza-4.jpg" />
+          <div class="price-4">
+            <h2>Meat Pizza</h2>
+            <p><span>$</span>10.69</p>
+            <h4>Order Now <i class="fa-solid fa-chevron-right"></i></h4>
+          </div>
+        </div>
+        <div class="container">
+          <img src="images/pizza-5.jpg" />
+          <div class="price-5">
+            <h2>Margherita Pizza</h2>
+            <p><span>$</span>4.89</p>
+            <h4>Order Now <i class="fa-solid fa-chevron-right"></i></h4>
+          </div>
+        </div>
+        <div class="container">
+          <img src="images/pizza-6.jpg" />
+          <div class="price-6">
+            <h2>BBQ Chicken Pizza</h2>
+            <p><span>$</span>5.99</p>
+            <h4>Order Now <i class="fa-solid fa-chevron-right"></i></h4>
+          </div>
+        </div>
+        <div class="container">
+          <img src="images/pizza-7.jpg" />
+          <div class="price-7">
+            <h2>Hawaiian Pizza</h2>
+            <p><span>$</span>4.39</p>
+            <h4>Order Now <i class="fa-solid fa-chevron-right"></i></h4>
+          </div>
+        </div>
+        <div class="container">
+          <img src="images/pizza-8.jpg" />
+          <div class="price-8">
+            <h2>Buffalo Pizza</h2>
+            <p><span>$</span>2.89</p>
+            <h4>Order Now <i class="fa-solid fa-chevron-right"></i></h4>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!---------------------BURGER-------------------->
+
+  <div class="burger" id="burger">
+    <h1>BURGER</h1>
+    <p class="para">Nothing Brings People <br> Together Like Good Food.</p>
+
+    <div class="burger-container">
+      <div class="burger-img">
+        <img src="images/burger-1.jpg" alt="img">
+        <div class="names">
+          <h3>Chilli burger With Pepper Relish</h3>
+          <p><span>$</span>2.89</p>
+          <h4>Order Now <i class="fa-solid fa-chevron-right"></i></h4>
+        </div>
+      </div>
+
+      <div class="burger-img">
+        <img src="images/burger-2.jpg" alt="img">
+        <div class="names">
+          <h3>Perfect Lamb Satay Burger</h3>
+          <p><span>$</span>2.89</p>
+          <h4>Order Now <i class="fa-solid fa-chevron-right"></i></h4>
+        </div>
+      </div>
+
+      <div class="burger-img">
+        <img src="images/burger-3.jpg" alt="img">
+        <div class="names">
+          <h3>Lamb and Tomato Stuffed Burger</h3>
+          <p><span>$</span>2.89</p>
+          <h4>Order Now <i class="fa-solid fa-chevron-right"></i></h4>
+        </div>
+      </div>
+
+      <div class="burger-img">
+        <img src="images/burger-4.jpg" alt="img">
+        <div class="names">
+          <h3>Crunchy Chicken and Fish Burger</h3>
+          <p><span>$</span>2.89</p>
+          <h4>Order Now <i class="fa-solid fa-chevron-right"></i></h4>
+        </div>
+      </div>
+
+      <div class="burger-img">
+        <img src="images/burger-5.jpg" alt="img">
+        <div class="names">
+          <h3> Chicken Feta Cheese Burger</h3>
+          <p><span>$</span>2.89</p>
+          <h4>Order Now <i class="fa-solid fa-chevron-right"></i></h4>
+        </div>
+      </div>
+
+      <div class="burger-img">
+        <img src="images/burger-6.jpeg" alt="img">
+        <div class="names">
+          <h3>Lentil and Mushroom Burger</h3>
+          <p><span>$</span>2.89</p>
+          <h4>Order Now <i class="fa-solid fa-chevron-right"></i></h4>
+        </div>
+      </div>
+
+      <div class="burger-img">
+        <img src="images/burger-7.jpg" alt="img">
+        <div class="names">
+          <h3>Stuffed Bean Burger</h3>
+          <p><span>$</span>2.89</p>
+          <h4>Order Now <i class="fa-solid fa-chevron-right"></i></h4>
+        </div>
+      </div>
+
+      <div class="burger-img">
+        <img src="images/burger-8.jfif" alt="img">
+        <div class="names">
+          <h3>Lamb Burger with Radish Slaw</h3>
+          <p><span>$</span>2.89</p>
+          <h4>Order Now <i class="fa-solid fa-chevron-right"></i></h4>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-----------------SWEETS-------------->
+
+  <div class="sweets" id="sweets">
+    <h2>SWEETS</h2>
+    <p>Life Is too Short <br> To Skip Dessert</p>
+
+    <div class="sweet-container">
+      <div class="sweet-img">
+        <img src="images/cupcake.jpg" alt="img">
+        <h3>CupCakes</h3>
+        <h4>Shop Now <i class="fa-solid fa-chevron-right"></i></h4>
+      </div>
+
+      <div class="sweet-img">
+        <img src="images/ice.jpg" alt="img">
+        <h3>Ice-Creams</h3>
+        <h4>Shop Now <i class="fa-solid fa-chevron-right"></i></h4>
+      </div>
+
+      <div class="sweet-img">
+        <img src="images/cookies.jpg" alt="img">
+        <h3>Cookies</h3>
+        <h4>Shop Now <i class="fa-solid fa-chevron-right"></i></h4>
+      </div>
+
+      <div class="sweet-img">
+        <img src="images/desserts.jpg" alt="img">
+        <h3>Desserts</h3>
+        <h4>Shop Now <i class="fa-solid fa-chevron-right"></i></h4>
+      </div>
+    </div>
+  </div>
+
+  <!-------------------DRINKS---------------->
+
+  <div class="drinks" id="drink">
+    <h2>DRINKS</h2>
+    <p>Drink Good Juice <br> With Good Friends</p>
+
+    <div class="drink-container">
+      <div class="drink-img">
+        <img src="images/smoothie.jpg" alt="img">
+        <h3>Smoothies</h3>
+        <h4>Shop Now <i class="fa-solid fa-chevron-right"></i></h4>
+      </div>
+
+      <div class="drink-img">
+        <img src="images/juice.jpg" alt="img">
+        <h3>Juices</h3>
+        <h4>Shop Now <i class="fa-solid fa-chevron-right"></i></h4>
+      </div>
+
+      <div class="drink-img">
+        <img src="images/shake.jpg" alt="img">
+        <h3>Shakes</h3>
+        <h4>Shop Now <i class="fa-solid fa-chevron-right"></i></h4>
+      </div>
+
+      <div class="drink-img">
+        <img src="images/soda.jpg" alt="img">
+        <h3>Sodas</h3>
+        <h4>Shop Now <i class="fa-solid fa-chevron-right"></i></h4>
+      </div>
+    </div>
+  </div>
+
+
+  <!----------------FOOTER------------>
+
+
+  <div class="find">
+    <h2>FIND US</h2>
+  </div>
+  <ul class="social-media-list">
+    <li><a href="#" target="_blank" class="contact-icon">
+        <i class="fa-brands fa-github" aria-hidden="true"></i></a>
+    </li>
+    <li><a href="#" target="_blank" class="contact-icon">
+        <i class="fa-brands fa-codepen" aria-hidden="true"></i></a>
+    </li>
+    <li><a href="#" target="_blank" class="contact-icon">
+        <i class="fa-brands fa-figma" aria-hidden="true"></i></a>
+    </li>
+    <li><a href="#" target="_blank" class="contact-icon">
+        <i class="fa-brands fa-dribbble" aria-hidden="true"></i></a>
+    </li>
+  </ul>
+  <hr>
+
+  <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+
+
+</body>
+
+</html>

@@ -8,6 +8,7 @@
     <title>Food Shop</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -16,24 +17,41 @@
     <header>
         <img src="images/logo.png">
 
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li id="services"><a href="#service">Services <i class="fa-solid fa-angle-down"></i></a></li>
-            <li><a href="#menu">Menu <i class="fa-solid fa-angle-down"></i></a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li id="services"><a href="#service">Services</a>
+                    <ul>
+                        <li><a href="#delivery">Delivery</a></li>
+                        <li><a href="#order">Order</a></li>
+                        <li><a href="#quality">Quality</a></li>
+                    </ul>
+                </li>
+                <li><a href="menu.html">Menu</a>
+                    <ul>
+                        <li><a href="#pizza">Pizza</a></li>
+                        <li><a href="#burger">Burger</a></li>
+                        <li><a href="#sweets">Sweets</a></li>
+                        <li><a href="#drink">Drinks</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
         <div class="icons">
             <i class="fa-solid fa-magnifying-glass"></i>
             <i class="fa-solid fa-bag-shopping"></i>
         </div>
-        <button class="btn"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</button>
+       <div class="login">
+        <a href="#login"><i class="fa-solid fa-arrow-right-to-bracket"></i>Login</a>
+       </div>
     </header>
 
     <!----------------------------------HOME------------------------------->
 
 
     <section class="home" id="home">
-        <button class="btn">More than faster<img src="images/cherry.png"></button>
+        <button class="faster">More than faster<img src="images/cherry.png"></button>
         <div class="text">
             <h2>Be The Fastest<br>In Delivery<br>Your <span>Food</span></h2>
             <img src="images/girl.png" alt="img">
@@ -77,9 +95,6 @@
 
         </div>
     </section>
-
-    <!------------------------MENU---------------------------->
-
 
 
     <!-----------------------------REVIEW-------------------------->
@@ -209,3 +224,6 @@
 </body>
 
 </html>
+
+
+
